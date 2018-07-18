@@ -11,7 +11,7 @@ rekognition = boto3.client('rekognition')
 
 
 # --------------- Helper Functions to call Rekognition APIs ------------------
-
+# edited!
 
 def detect_faces(bucket, key):
     response = rekognition.detect_faces(Image={"S3Object": {"Bucket": bucket, "Name": key}})
